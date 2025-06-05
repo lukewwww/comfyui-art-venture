@@ -181,6 +181,28 @@ Configures AWS Bedrock Mistral API access.
 - `aws_secret_access_key`: AWS secret key
 - `region`: AWS region
 
+### Crynux API Nodes
+
+Crynux provides free & very cheap API access to run most of the open source LLM models on Huggingface using the decentralized GPU cloud.
+
+#### CrynuxLLMApiConfig
+
+Configures Crynux LLM API parameters. Select from a wide range of supported open source models.
+
+**Inputs:**
+- `model`: Huggingface model ID. (LLaMa, Mistral, Qwen, etc.)
+- `max_token`: Maximum tokens
+- `temperature`: Temperature parameter
+
+#### CrynuxLLMApi
+
+Configures Crynux LLM API access.
+
+**Inputs:**
+
+- `crynux_api_key`: (Optional) Crynux API key. Leave empty to use the free tier.
+- `endpoint`: (Optional) API endpoint URL
+
 #### LLMMessage
 
 Creates a message for LLM interaction.
